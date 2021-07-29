@@ -1,0 +1,10 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    "react-hot-loader/babel",
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-proposal-class-properties", // 支持类属性写法
+    ["@babel/plugin-proposal-decorators", { "legacy": true }] // 支持装饰器语法
+  ]
+}

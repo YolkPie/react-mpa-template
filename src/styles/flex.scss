@@ -1,0 +1,58 @@
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin  flex-one {
+  flex: 1;
+}
+
+@mixin align-items($pos: 'flex-start') {
+  align-items: $pos;
+}
+
+@mixin justify-content($pos: 'flex-start') {
+  justify-content: $pos;
+}
+
+@mixin flex-row-center {
+  @include flex-row;
+  @include align-items(center);
+  @include justify-content(center);
+}
+
+@mixin flex-row-start-center {
+  @include flex-row;
+  @include align-items(flex-start);
+  @include justify-content(center);
+}
+
+
+@mixin flex-row-center-start {
+  @include flex-row;
+  @include align-items(center);
+  @include justify-content(flex-start);
+}
+
+@mixin flex-column-center {
+  @include flex-column();
+  @include align-items(center);
+  @include justify-content(center);
+}
+
+@mixin flex-column-start-center {
+  @include flex-column();
+  @include align-items(center);
+  @include justify-content(center);
+}
+
+@mixin flex-column-center-start {
+  @include flex-column();
+  @include align-items(center);
+  @include justify-content(flex-start);
+} 
